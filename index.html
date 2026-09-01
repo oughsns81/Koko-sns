@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOUKOU - 歴史SNS劇場</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone">
+    <header class="topbar">
+      <div class="logo">KOUKOU</div>
+      <div class="sub">歴史SNS劇場</div>
+    </header>
+
+    <section class="post">
+      <div class="user-row">
+        <div class="avatar">信</div>
+        <div>
+          <div class="name">織田信長 <span>@nobunaga_1568</span></div>
+          <div class="date">1581年9月12日</div>
+        </div>
+      </div>
+
+      <p class="post-text">
+        今日は愛するペットのホトトギスの<br>
+        火葬を行いました。<br><br>
+        安らかに眠ってくれ……🙏
+      </p>
+
+      <!-- あとで自分の写真に差し替えられます -->
+      <img id="postImage" class="post-image" src="images/post.svg"
+           alt="投稿写真" onerror="this.style.display='none'">
+
+      <div class="actions">
+        <span>💬 <b id="commentCount">0</b></span>
+        <span>↻ <b>381</b></span>
+        <span>♡ <b id="likeCount">2481</b></span>
+      </div>
+    </section>
+
+    <section class="comments">
+      <h2>コメント</h2>
+      <div id="commentList"></div>
+    </section>
+
+    <footer>
+      ※これは文化祭用の架空SNS・歴史パロディです。実在のSNSとは関係ありません。
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
